@@ -18,3 +18,31 @@ public class HelloWorld{
         System.out.println(sub8);
      }
 }
+
+
+
+
+
+public class MyClass {
+    public static void main(String args[])
+    {
+        ArrayList<Integer> numList = new ArrayList<Integer> ();
+        numList.add(4);numList.add(5); numList.add(6);
+        
+        for(int i = 0; i < numList.size(); i++){
+            System.out.print(numList.get(i) + " ");
+            System.out.println("\n");
+        }
+        
+        for(Integer num: numList){
+            System.out.print(num + " ");
+            System.out.println("\n");
+        }
+        System.out.println("\n");
+     // int x=10;
+     // int y=25;
+     // int z=x+y;
+
+     // System.out.println("Sum of x+y = " + z);
+    }
+}
