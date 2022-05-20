@@ -22,12 +22,19 @@ public class HelloWorld{
 
 
 
-
 public class MyClass {
     public static void main(String args[])
     {
         ArrayList<Integer> numList = new ArrayList<Integer> ();
-        numList.add(4);numList.add(5); numList.add(6);
+        numList.add(4);numList.add(5); numList.add(6); numList.add(8);
+        
+        numList.set(1, 3);
+        numList.remove(1);
+        
+        System.out.println("The ArrayList is empty :: " + numList.isEmpty());
+
+        System.out.println("The ArrayList contains 5 :: " + numList.contains(5));
+        numList.clear();
         
         for(int i = 0; i < numList.size(); i++){
             System.out.print(numList.get(i) + " ");
@@ -45,4 +52,5 @@ public class MyClass {
 
      // System.out.println("Sum of x+y = " + z);
     }
+}
 }
