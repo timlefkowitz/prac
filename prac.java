@@ -52,5 +52,98 @@ public class MyClass {
 
      // System.out.println("Sum of x+y = " + z);
     }
+    
+    
+    import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+
+    int[] test = {1, -4, 2, 3, 4, -1, 5};
+    System.out.println(complementPair(test));
+  }
+
+  /*
+  
+  TODAYS OUTCO LIVE COING SESSION
+
+  Complement Pair 
+
+  input: int[]
+  output: ArrayList<Integer> 
+
+  input: {1, -4, 2, 3, 4, -1, 5}
+  ouptut: {1, 4}
+
+  Objective: return arraylist of positive integers that have a 
+             complement negative integer
+
+
+  Notes: 
+  - 
+  
+  */
+
+
+  /*
+
+
+           i
+arr = {1, -4, 2, 3, 4, -1, 5}
+
+current = 2
+complement = -2
+
+matches = {1, }
+
+
+1 my understanding : finding complement elements positive or negitive 
+2. my example: int[] myArray = [1 ,4 6, -4 , 8 ,3 ];
+output : 4
+3. 
+
+ArrayList<int> matches = new ArrayList<int>();
+
+for (int i = 0; i < arr.length; i++) {
+
+  int current = arr[i];
+  int complement = -current;
+
+  if(arr.contains(complement)){
+    matches.add(complement); 
+  }
+
+  return matches;
+}
+
+while (int i = 0; i < complementPair.size()); i++; {
+
+}
+*/
+
+  public static ArrayList<Integer> complementPair(int[] arr) {
+    ArrayList<Integer> matches = new ArrayList<Integer>();
+
+    ArrayList<Integer> arrList = new ArrayList<Integer>();
+
+    for (int i = 0; i < arr.length; i++) {
+      arrList.add(arr[i]);
+    }
+    
+    for (int i = 0; i < arr.length; i++) {
+      int current = arr[i];
+      int complement = -1 * current;
+    
+      if(arrList.contains(complement)){
+        
+        if(current > 0){
+          matches.add(current); 
+        }
+      }
+    }
+  
+    return matches;
+  }
+}
 }
 }
