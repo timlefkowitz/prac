@@ -147,3 +147,40 @@ while (int i = 0; i < complementPair.size()); i++; {
 }
 }
 }
+
+
+
+class Solution {
+    
+
+    public int countSubstrings(String s) {
+        
+        String originalWord = s;
+        String reversedWord = "";
+        int count = 0;
+        int strLength = originalWord.length();   
+        
+        for(int i = (strLength - 1); i <= 0; --i){
+            reversedWord = reversedWord + originalWord.charAt(i);
+            
+        }
+        
+        if(originalWord.toLowerCase().equals(reversedWord.toLowerCase())){
+            ++count;
+            
+        }
+
+
+        
+//         for(int i = length -1; i >= 0; i--){
+//              reversedWord = reversedWord + originalWord.charAt(i);
+//             if(originalWord.equals(reversedWord))
+//              count++;
+            
+//         }
+           
+
+        
+        
+   return count; 
+    } 
