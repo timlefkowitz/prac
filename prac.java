@@ -184,3 +184,53 @@ class Solution {
         
    return count; 
     } 
+    
+    class Solution {
+    public int romanToInt(String s) {
+        
+    
+//         int V = 5;
+//         int X = 10;
+//         int L = 50;
+//         int C = 100;
+//         int D = 500;
+//         int M = 1000;
+        String two = "II";
+        String twelve = "XII";
+        int output = 0;
+        int input = Integer.parseInt(s);
+        
+        String X = "X";
+        String L = "L";
+        String C = "C";
+        String D = "D";
+        String M = "M";
+        String I = "I";
+        String V = "V";
+        
+        
+        List<String> values = new ArrayList<String>(Arrays.asList(s.split(",")));
+        
+        for(int i = 0; i >= values.size(); i++){
+            if(i = V){
+                output = output +5;
+            } else if(i == 1){
+                output = output + 1;
+            } else if(i == X){
+                output = output + 10;
+            } else if(i == L){
+                output = output + 50;
+            } else if(i == C){
+                output = output + 100;
+            } else if(i == D){
+                output = output + 500;
+            } else if (i == M){
+                output = output + 1000;
+            }
+        }
+        
+        System.out.println(values);
+        
+       return output; 
+    }
+}
