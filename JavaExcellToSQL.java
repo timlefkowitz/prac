@@ -22,7 +22,7 @@ public class append {
         int count=0;
         try{
 
-            File f = new File("C:\\Projects\\IU\\R__00402_UPE_CARBON_PM_DML.sql");
+            File f = new File("C:\\Projects\\c.sql");
 
             FileWriter fw = new FileWriter(f, true);
             String sql= "(Insert into CARBS(HAM,BURGER,TEA) values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
