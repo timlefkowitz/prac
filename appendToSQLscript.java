@@ -17,7 +17,7 @@ import static java.lang.Integer.parseInt;
 
 
 public class append {
-    
+
     public static void main(String[] args){
         int count=0;
         try{
@@ -36,7 +36,7 @@ public class append {
                     String itemsQ = Stream.of(items).collect(Collectors.joining("\",\"", "\"" , "\""));
                     System.out.println(itemsQ);
 
-                    fw.write(  "\n"+"Insert into CARBS (HAM,BURGER,TEA) values (''" + itemsQ);
+                    fw.write(  "\n"+"Insert into CARBS (HAM,BURGER,TEA) values (" + itemsQ);
 
                 }
 //                String inputLine = lineReader.readLine();
