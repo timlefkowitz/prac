@@ -41,6 +41,9 @@ public class SQL_import_script {
                 String line;
                 while((line = lineReader.readLine()) != null){
                     String[] items = line.split(",");
+                    
+                    // this stream if done correctly would be a better way then calling each variable 
+                    // I would like to continue learning about Stream of  
                     String itemsQ = Stream.of(items).collect(Collectors.joining(("','"), "'" , "'"));
                         String LABEL = items[0] + "'" ;
                         String PRICE_TYPE = "'" + items[1] + "'" ;
