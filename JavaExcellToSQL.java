@@ -35,6 +35,8 @@ public class append {
                 while((line = lineReader.readLine()) != null){
                     String[] items = line.split(",");
                     System.out.println(Arrays.toString(items));
+                    // we need to add strings within some of these elements
+                    // @items[3] + "by_date" + items[4] (continue items string) @items6 + "null" 
                     fw.write(  "\n"+"Insert into CARBS (HAM,BURGER,TEA) values (''" + Arrays.toString(items));
 
                 }
