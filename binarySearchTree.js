@@ -1,4 +1,4 @@
-Class BST {
+class BST {
     constructor(){
         this.root = null;
     }
@@ -8,7 +8,6 @@ Class BST {
         if(node === null){
             this.root = new Node(data);
             return;
-        }
      } else {
         const searchTree = function(node) {
             if (data < node.data) {
