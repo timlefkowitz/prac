@@ -31,11 +31,14 @@ static class BinarySearchTree {
                 } else if(node.left !== null){
                     return searchTree(node.left);
                 }
-            }
+            } else if(node.right !== null){
+                return searchTree(node.right);
+            } 
         }
      }
 
  }
+
 
  static class Node {
     constructor(data, left = null, right = null){
