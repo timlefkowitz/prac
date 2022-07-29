@@ -79,7 +79,7 @@ class BST {
  }
  remove(data){
     const removeNode = function(node,data){
-        if(node == null){
+        if(node == null) {
             return null;
         }
         if(data == node.data) {
