@@ -10,12 +10,30 @@ static class BinarySearchTree {
         }
     }
 
-    node getMostLeft(node x) {
+    Node getMostLeft(node x) {
         x.left == null){
             return x;
         }
     }
 
+    add(data){
+        const node = this.root;
+        if(node === null){
+            this.root = new Node(data);
+            return;
+        }
+     } else {
+        const searchTree = function(node) {
+            if (data < node.data) {
+                if(node.left === null) {
+                    node.left = new Node(data);
+                    return;
+                } else if(node.left !== null){
+                    return searchTree(node.left);
+                }
+            }
+        }
+     }
 
  }
 
