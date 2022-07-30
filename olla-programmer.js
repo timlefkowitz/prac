@@ -9,9 +9,16 @@ const depthFirstPrint = (graph, source) => {
         
         // i like starting with the constructor
         for(let neighbor of graph[current]){
-            stack.push(neighbor)
+            stack.push(neighbor);
         }
         
+    };
+
+    const breadthFirstPrint = (graph, source) => {
+        const queue = [source ];
+        while(queue.length > 0){
+            
+        }
     };
 
     const graph = {
