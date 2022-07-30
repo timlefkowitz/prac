@@ -1,8 +1,12 @@
 const depthFirstPrint = (graph, source) => {
     const stack = [source];
 
-    while(stack = null){
+    while(stack.length > 0){
 
+        //current node
+        const current = stack.pop();
+        console.log('stack bigger than ZERO' + '... Current node is'+ current);
+        
     };
 
     const graph = {
