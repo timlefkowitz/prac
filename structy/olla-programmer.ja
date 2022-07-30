@@ -1,0 +1,9 @@
+const greet = (s) => {
+  // todo
+    return "olla " + s;
+};
+
+console.log(greet("peanut"));
+module.exports = {
+  greet,
+};
