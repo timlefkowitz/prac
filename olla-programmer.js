@@ -27,7 +27,7 @@ const depthFirstPrint = (graph, source) => {
     };
 
     const graph = {
-        a: ['6','c'],
+        a: ['c','b'],
         b: ['d'],
         c: ['e'],
         d: ['f'],
