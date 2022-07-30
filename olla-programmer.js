@@ -7,6 +7,11 @@ const depthFirstPrint = (graph, source) => {
         const current = stack.pop();
         console.log('stack bigger than ZERO' + '... Current node is'+ current);
         
+        // i like starting with the constructor
+        for(let neighbor of graph[current]){
+            stack.push(neighbor)
+        }
+        
     };
 
     const graph = {
