@@ -13,9 +13,9 @@ const depthFirstPrint = (graph, source) => {
         }
         
     };
-
+        // intro on breadthFirstPrint
     const breadthFirstPrint = (graph, source) => {
-        const queue = [source ];
+        const queue = [source];
         while(queue.length > 0){
             const current = quese.shift();
             console.log(current);
@@ -29,8 +29,8 @@ const depthFirstPrint = (graph, source) => {
     const graph = {
         a: ['c','b'],
         b: ['d'],
-        c: ['e'],
-        d: ['f'],
+        c: ['f'],
+        d: ['e'],
         e: [],
         f: []
     }
