@@ -22,8 +22,51 @@
         let f be a function that describes the running time
         of a particular algorithm for an input of size n :
 
+        // n3 is our biggest term
         f(n) = 7log(n)3 + 15n2 + 2n3 + 8
 
             0(f(n)) = 0(n3)
 
+
+        [][] EXAMPLES   [][]
+
+        CONSTANT TIME 0(1)
+        a := 1
+        b := 2
+        c := a + 5*b
+        i := 0
+        While i < 11 Do 
+            i = i +1    
+
+        LINEAR TIME: 0(n)
+        i := 0
+        While i < n Do 
+            i = i + 1
+
+            f(n) = n
+            0(f(n)) = 0(n)
+        i := 0
+        While i < n Do 
+            i = i + 3
+
+            f(n) = n/3
+            0(f(n)) = 0(n)   
+
+        Both of the following run in quadratic time.
+        The first may be obious since n work done n
+        times is n*n = 0(n2)
+
+        but what about the second one?
+
+        for (i := 0 ; i < n; i = i + 1)
+            for (j := 0 ; j < n; j = j + 1)
+           
+         f(n) = n*n = n2, 0(f(n)) = 0(n2)
+
+        for (i := 0 ; i < n; i = i + 1)
+            for (j := i ; j < n; j = j + 1)
+                      ^0 preplaced with i    
+
  */
+
+
