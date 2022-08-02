@@ -67,6 +67,22 @@
             for (j := i ; j < n; j = j + 1)
                       ^0 preplaced with i    
 
+ /*
+
+/**
+        Static and Dynamic Arrays
+
+        COmplexity
+
+                Static Array Dynamic Array
+        Access     0(1)          0(1)
+        Search     0(n)          0(n)
+        Insertion  N/A           0(n)
+        Appending  N/A           0(1)
+        Deletion   N/A           0(n)
+
+
+
+
+
  */
-
-
