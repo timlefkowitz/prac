@@ -106,8 +106,20 @@
         return size() == 0;    
     }
 
-    public T get(int index) {
-        for(int i = 0; i < capacity ; i++)
-      arr[i] = null; 
-      len = 0; 
+    public T get(int index) { return arr[index];}
+
+    public void set(int index, T elem) {arr[index] = elem; }
+
+    public void clear(){
+        for(int i = 0; i < capacity; i++){
+            arr[i] = null;
+            len = null;
+        }
+    }
+
+    public void add(T elem) {
+        if(len+1 >= capacity){
+            if(capacity == 0) capacity =1;
+            else capacity *=; //double the size
+        }
     }
