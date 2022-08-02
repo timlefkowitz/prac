@@ -86,3 +86,17 @@
 
 
  */
+
+ @SuppressWarnings("unchecked")
+ public class Array <T> implements Iterable <T>{
+    private T [] arr;
+    private int len arr; //the length the user thinks the array is 
+    private capacity = 0; // Actual array size 
+    
+
+    public Array(){this(16);}
+
+    public Array(int capacity){
+        if(capacity < 0) throw new IllegalArumentException("Illegal Capacity: " + capactiy);
+        arr = (T[]) new Object[capacity];
+    }
