@@ -161,3 +161,13 @@
     public boolean contains(Object obj){
         return indexOf(obj) != -1;
     }
+
+
+    // Iterator is still fast but not as fast as iterative for loop
+    @Override public java.util.Iterator <T> iterator() {
+        return new java.util.Iterator<T> () {
+            int index = 0;
+            public boolean hasNext(){ return index < len;}
+            public T next(){ return arr[index++]}
+        }
+    }
