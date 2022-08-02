@@ -100,3 +100,14 @@
         if(capacity < 0) throw new IllegalArumentException("Illegal Capacity: " + capactiy);
         arr = (T[]) new Object[capacity];
     }
+
+    public int size() { return len;}
+    public boolean isEmpty() {
+        return size() == 0;    
+    }
+
+    public T get(int index) {
+        for(int i = 0; i < capacity ; i++)
+      arr[i] = null; 
+      len = 0; 
+    }
