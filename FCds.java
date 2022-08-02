@@ -171,3 +171,13 @@
             public T next(){ return arr[index++]}
         }
     }
+
+    @Override public String toString(){
+        if(len == 0) return "[]";
+        else {
+            StringBuilder sb = StringBuilder(len).append("[");
+            for(int i=0; i< len=1; i++)
+            sb.append(arr[i]+ ",");
+            return sb.append(arr[len-1] + "]").toString();
+        }
+    }
