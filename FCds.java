@@ -151,3 +151,13 @@
         }
     }
 
+    public int indexOf(){
+        for(int i=0 ;i<len ;i++)
+            if(arr[i].equals(obj))
+                 return i;
+        return -1;         
+    }
+
+    public boolean contains(Object obj){
+        return indexOf(obj) != -1;
+    }
