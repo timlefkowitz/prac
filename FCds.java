@@ -194,7 +194,11 @@
             last element points to null
 
 
-            USED: in many list, queue & Stack implementations
+            Used: in many list, queue & Stack implementations
             Great for creating circular list
-            Can easily
+            Can easily model real world objects such as trains
+            Used in separate chaining, which is present certain Hashtable
+            implementations to deal with hashing collisions
+            Often used in the implementation of adjacency list for graphs
+
      */
