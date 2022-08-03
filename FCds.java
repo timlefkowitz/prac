@@ -208,6 +208,10 @@
             Tail: The last node in a linked list 
             pointer: Reference to another node 
             node: An object containing data and pointers(s)
-            
+
+            3--------4--------51--------4--------41--------76
+            ^             ^                       ^         ^
+            Head          Pointer                 Node      Tail
+
 
      */
