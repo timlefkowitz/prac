@@ -214,4 +214,18 @@
             Head          Pointer                 Node      Tail
 
 
+            Singly vs Doubly Linked List 
+
+            Singly Linked lists only hold a reference to the next
+            node. In the implementation you always maintain a reference
+            to the head to the linked list and a reference to the tail 
+            node for quick additions / removals
+
+            With a doubly linked list each node holds a reference to
+            the next and previous node. In the implementation you 
+            always maintain a reference to the head and the tail of 
+            the doubly linked list to do quick additions/removals
+            from both ends of your list 
+
+
      */
