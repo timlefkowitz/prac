@@ -201,4 +201,13 @@
             implementations to deal with hashing collisions
             Often used in the implementation of adjacency list for graphs
 
+
+            Terminology
+
+            Head: The first node in a linked list 
+            Tail: The last node in a linked list 
+            pointer: Reference to another node 
+            node: An object containing data and pointers(s)
+            
+
      */
