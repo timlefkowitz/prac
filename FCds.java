@@ -181,3 +181,20 @@
             return sb.append(arr[len-1] + "]").toString();
         }
     }
+
+
+    /**
+            LinkedList
+
+            A linked list is a squential list of 
+            nodes that hold data which point to other nodes
+            also containing data.     
+
+            DATA>DATA>DATA>DATA>NULL
+            last element points to null
+
+
+            USED: in many list, queue & Stack implementations
+            Great for creating circular list
+            Can easily
+     */
