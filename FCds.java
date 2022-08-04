@@ -268,8 +268,13 @@
             pubic void clear() {
                 Node <T> trav = head;
                 while(trav != null) {
-                    Node<T>
+                    Node<T> next = trav.next;
                 }
+            }
+
+            // Add an element to the tail of the linked list, 0(1)
+            public void add(T elem) {
+                addLast(elem);
             }
 
 
