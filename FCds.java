@@ -264,6 +264,14 @@
                 }
             }
 
+            // Empty this linked list, 0(n)
+            pubic void clear() {
+                Node <T> trav = head;
+                while(trav != null) {
+                    Node<T>
+                }
+            }
+
 
 
 
