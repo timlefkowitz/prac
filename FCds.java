@@ -287,8 +287,12 @@
                     head.prev = new Node<T> (elem, null, head);
                     head = head.prev;
                 }
-
                 size++
+            }
+
+            //Add a node to the tail of the linked list, 0(1)
+            public void addLast(T elem){
+                
             }
 
 
