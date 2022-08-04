@@ -277,6 +277,22 @@
                 addLast(elem);
             }
 
+            // Add an elemement to the beginning of this linked list, 0(1)
+            public void addFirst(T elem){
+
+                // The linked list is empty
+                if(isEmpty()) {
+                    head = tail = new Node <T> (elem, null, null);
+                } else {
+                    head.prev = new Node<T> (elem, null, head);
+                    head = head.prev;
+                }
+
+                size++
+            }
+
+
+
 
 
 
