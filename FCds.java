@@ -239,10 +239,19 @@
       */
 
         public class DoublyLinkedList <T> implements Iterable <T> {
+           
+           //instances 
             private int size = 0;
             private Node <T> head = null;
             private Node <T> tail = null;
-            
+
+            // Internal node class to represent data 
+            private class Node<T> {
+                T data;
+                Node <T> prev, next;
+                
+            }
+
 
 
 
