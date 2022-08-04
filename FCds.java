@@ -295,7 +295,11 @@
                 // the linked list is empty 
                 if(isEmpty()){
                     head = tail = new Node <T> (elem, null, null);
-                }
+                } else {
+                    tail.next = new Node<T> (elem, tail, null);
+                    tail = tail.next;
+                } 
+                size++;
             }
 
 
