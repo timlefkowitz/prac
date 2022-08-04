@@ -257,6 +257,11 @@
                     this.next = next;
 
                 }
+
+                //
+                @Overide public String toString(){
+                    return data.toString();
+                }
             }
 
 
