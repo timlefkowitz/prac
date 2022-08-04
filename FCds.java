@@ -302,6 +302,12 @@
                 size++;
             }
 
+            // Check the value of the first node if it exist, 0(1)
+            public T peekFirst() {
+                if(isEmpty()) throw new RuntimeException("Empty list");
+                return head.data;
+            }
+
 
 
 
