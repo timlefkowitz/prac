@@ -314,6 +314,14 @@
                 return tail.data;
             }
 
+            // Remove the first value at the head of the linked list, 0(1)
+            public T removeFirst(){
+
+                // can't remove data from an empty list - -
+                if(isEmpty()) throw new RuntimeExpection("Empty List");
+                
+            }
+
 
 
 
