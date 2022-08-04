@@ -308,6 +308,12 @@
                 return head.data;
             }
 
+            //Check the value of the last node if it exist, 0(1)
+            public T peekLast(){
+                if(isEmpty()) throw new RuntimeException("Empty list");
+                return tail.data;
+            }
+
 
 
 
