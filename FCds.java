@@ -292,7 +292,10 @@
 
             //Add a node to the tail of the linked list, 0(1)
             public void addLast(T elem){
-                
+                // the linked list is empty 
+                if(isEmpty()){
+                    head = tail = new Node <T> (elem, null, null);
+                }
             }
 
 
