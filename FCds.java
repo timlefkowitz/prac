@@ -319,7 +319,23 @@
 
                 // can't remove data from an empty list - -
                 if(isEmpty()) throw new RuntimeExpection("Empty List");
-                
+
+                // Extract the data at the head and move
+                // the head pointer forwards one node
+                T data = head.data;
+                head = head.next;
+                --size;
+
+                // If the list is empty set the tail to null as well
+                if(isEmpty()) tail = null;
+
+                // Do a memory clean of the previous node
+                else head.prev = null;
+
+                // Return the data that was at the first node we just removed
+                return data;
+
+
             }
 
 
