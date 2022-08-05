@@ -380,8 +380,8 @@
             *Used in compiler syntax checking for matching brackets and braces.
             *Can be used to model a pile of books or plates.
             *Used behind the scenes to support recursion by keeping track
-            of previous function calls. 
+            of previous function calls.  <<<< this is cool 
             Can be used to do a Depth First Search(DFS) on a graph
-            
+
          
           */
