@@ -337,10 +337,24 @@
 
 
             }
-
-
-
-
-
-
         }
+
+
+        // What is a Stack?
+
+        
+        /**
+            A stack is a one-ended linear data 
+            structure which models a real world
+            stack by having two primary operations, 
+            namely push and pop 
+
+                Data -    -> Data
+                  push | |  pop
+                       V |
+               Top -> Data
+                      Data
+                      Data
+                      Data
+
+         */
