@@ -358,3 +358,22 @@
                       Data
 
          */
+
+         pop()
+         push('Onion')
+         push('Celery')
+         push('Watermelon')          Apple
+         pop()                       Potato
+         pop()                       Cabbage
+         push('Lettuce')             Garlic
+
+         /** i know this stuff im just forcing myself to refresh myself lol
+            :D
+            
+         */
+
+         /**
+         
+         
+         
+          */
