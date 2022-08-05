@@ -442,7 +442,22 @@
                 public Stack (T firstElem){
                     push(firstElem);
                 }
-                
+
+                //Return the number of elements in the stack 
+                public int size(){
+                    return list.size();
+                }
+
+                //Check if the stack is empty
+                public boolean isEmpty(){
+                    return size() == 0;
+                }
+
+                // Push an element on the stack 
+                public void push(T elem) {
+                    list.addLast(elem);
+                }
+
             }
 
            
