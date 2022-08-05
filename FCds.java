@@ -401,8 +401,18 @@
                              mirror reversed        mirrred reversed
                              bracket } = yes        bracket ) = no
 
+            Bracket sudo code
+            Let S be a stack
+            for bracket in bracket_string:
 
-          
+                rev = getReversedBracket(bracket)
+
+                if isLeftBracket(bracket):
+                    S.push(bracket)
+                Else If S.isEmpty() or S.pop() != rev:
+                    return false // Invalid
+
+                return S.isEmpty() // Valid is S is empty 
            */
 
            
