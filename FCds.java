@@ -385,3 +385,24 @@
 
          
           */
+          
+
+          /**
+            Bracket - Examples
+
+
+            invalid bracket example
+            [{})[] = invalid bracket structor
+
+
+             [       {<--------- }                     )[]
+            push    push     traverses              traverses
+                             checks for             checks for 
+                             mirror reversed        mirrred reversed
+                             bracket } = yes        bracket ) = no
+
+
+          
+           */
+
+           
