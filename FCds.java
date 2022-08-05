@@ -433,6 +433,15 @@
             */
 
             public class Stack <T> implements Iterable <T>{
+                private java.util.LinkedList <T> list = new java.util.LinkedList<T>();
+
+                //Create an empty stack 
+                public Stack (){}
+
+                //Create a Stack with an initial element
+                public Stack (T firstElem){
+                    push(firstElem);
+                }
                 
             }
 
