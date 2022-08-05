@@ -466,6 +466,13 @@
                     return list.removeLast();
                 }
 
+                public T peek(){
+                    if(isEmpty())
+                        throw new java.util.EmptyStackException();
+                    return list.peek();
+                }
+                
+
             }
 
            
