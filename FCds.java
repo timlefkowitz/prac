@@ -458,6 +458,14 @@
                     list.addLast(elem);
                 }
 
+                // Pop an elemt off the stack 
+                // Throws an error is the stack is empty 
+                public T pop(){
+                    if(isEmpty())
+                        throw new java.util.isEmptyStackException();
+                    return list.removeLast();
+                }
+
             }
 
            
