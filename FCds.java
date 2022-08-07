@@ -339,6 +339,8 @@
             }
         }
 
+            // Remove the last value at the tail of the linked list 0(1)
+            
 
         // What is a Stack?
 
@@ -359,6 +361,10 @@
 
          */
 
+<<<<<<< HEAD
+
+        }
+=======
          pop()
          push('Onion')
          push('Celery')
@@ -475,4 +481,7 @@
 
             }
 
+           /**
+           Queues
            
+            */
