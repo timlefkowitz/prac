@@ -489,4 +489,10 @@
             which models real world queues by
             having two primary operations, namely
             enqueue and dequeue
+
+                                  Queue Back
+                                   v 
+             Dequeue []<-- [][][][][]  <-- [] Enqueue
+                ^
+                Queue Front
             */
