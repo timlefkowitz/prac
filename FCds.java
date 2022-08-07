@@ -495,4 +495,14 @@
              Dequeue []<-- [][][][][]  <-- [] Enqueue
                 ^
                 Queue Front
+
+                Queue Terminology
+
+                There does not seem to be consistent
+                terminology for inserting and removing 
+                elements from a queues.
+
+                Dequeue = polling 
+                (These are also sometimes called
+                removing, but i find this ambiguous)
             */
