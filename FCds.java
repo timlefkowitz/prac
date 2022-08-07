@@ -484,4 +484,9 @@
            /**
            Queues
            
+
+            A queue is a linear data structure
+            which models real world queues by
+            having two primary operations, namely
+            enqueue and dequeue
             */
