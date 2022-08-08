@@ -505,4 +505,16 @@
                 Dequeue = polling 
                 (These are also sometimes called
                 removing, but i find this ambiguous)
+
+                Queue Examples
+
+                Instructions:
+                Enqueue(12)
+                Dequeue()
+                Dequeue()
+                Enqueue(7)
+                Dequeue()
+                Enqueue(-6)
+
+                Front [55][-1][33][17][11] back
             */
