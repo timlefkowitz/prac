@@ -477,7 +477,12 @@
                         throw new java.util.EmptyStackException();
                     return list.peek();
                 }
-                
+
+                // Allow users to iterate through the stack using an iterator
+                @Override public java.util.Iterator <T> iterator (){
+                    return list.iterator();
+                }
+
 
             }
 
@@ -517,4 +522,31 @@
                 Enqueue(-6)
 
                 Front [55][-1][33][17][11] back
+        
+                
+
+                Adding Elements
+                to a Binary Heap
+
+
+                ways of implementing
+                a Priority Queue
+
+                Priority queues are usually
+                implemented with heaps since
+                this gives them the best possible
+                time complexity. 
+
+                The Priority Queue (PQ) is an Abstract 
+                Data Type (ADT), hence heaps are not the 
+                only way to implement PQs. As an example,
+                we could use an unsorted list, but this 
+                would not give us the best possible time 
+                complexity. 
+                
+
+        
+        
             */
+
+        
