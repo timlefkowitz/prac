@@ -566,7 +566,22 @@
                 if it looks like a parent doesn't have two children
                 it's because they are null but they do
 
-        
+
+                Binary Heap 
+                Represebtation
+
+                        0                  9
+                  1           2         8      7
+                 3  4      5     6     6 5    1  2 
+                7 8 9 10 11 12 13 14  2 2 3 40 1 2 1
+
+
+
+                Removing Elements 
+                From a Binary Heap
+
+                removing the root value is called polling 
+                
             */
 
         
