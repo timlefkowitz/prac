@@ -562,7 +562,10 @@
                 a binary heap is a binary tree that 
                 supports the heap invariant. In a binary
                 tree every node has exactly two children.
-                
+
+                if it looks like a parent doesn't have two children
+                it's because they are null but they do
+
         
             */
 
