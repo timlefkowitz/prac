@@ -556,7 +556,13 @@
                     Pairing Heap
 
 
-        
+                Priority Queue With
+                Binary Heap 
+
+                a binary heap is a binary tree that 
+                supports the heap invariant. In a binary
+                tree every node has exactly two children.
+                
         
             */
 
