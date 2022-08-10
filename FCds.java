@@ -581,7 +581,20 @@
                 From a Binary Heap
 
                 removing the root value is called polling 
-                
+                Polling - 0(log(n))
+                Removing - 0(n)
+
+                Removing elements from 
+                Binary Heap in 0(log(n))
+
+                The inefficiency of the removal algforithm
+                comes from the fact that we have to perform 
+                a linear search to find out where an element is 
+                indexed at. What if instead we did a lookup using 
+                a hashtable to find out where a node is indexed at
+
+                a hashtable provides a constant time lookup
+                and update for a mapping from a key(the node value ) to a value (the index) 
             */
 
         
