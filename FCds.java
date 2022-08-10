@@ -595,6 +595,21 @@
 
                 a hashtable provides a constant time lookup
                 and update for a mapping from a key(the node value ) to a value (the index) 
+         
+                Removing Elements From 
+                Brinary Heap in 0(log(n))
+
+                Node Value      Position(s) 
+                (key)           (Value)
+                2               0,2,6
+                7               1,4
+                11              3
+                13              5
+
+                     2                  0
+                  7      2            1  2
+                 117   13 2         3 4 5 6 
+         
             */
 
         
