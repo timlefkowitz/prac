@@ -543,7 +543,18 @@
                 we could use an unsorted list, but this 
                 would not give us the best possible time 
                 complexity. 
-                
+
+
+                Priority Queue With Binary Heap
+
+                There are many types of heaps we 
+                could use to implement a priority 
+                queue including: 
+                    Binary Heap
+                    Fibonacci Heap
+                    Binomial Heap
+                    Pairing Heap
+
 
         
         
