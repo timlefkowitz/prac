@@ -609,6 +609,20 @@
                      2                  0
                   7      2            1  2
                  117   13 2         3 4 5 6 
+
+
+                 Removing Elements From 
+                 Binary Heap in 0(log(n))
+
+                 Question: If we want to remove a repeated 
+                 node in our heap, which node do we remove
+                 and does it matter which one we pick 
+
+                 Answer: no it doesn't matter which node 
+                 we remove as long as we satisfy
+                 the heap invariant in the end.
+
+                 
          
             */
 
