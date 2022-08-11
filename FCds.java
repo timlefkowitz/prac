@@ -675,6 +675,19 @@
                     for(T elem : elems) add(elem);
                  }
 
+                 //Returns true/false depending on if the priortity queue is empty
+                 public boolean isEmpty(){
+                    return heapSize == 0;
+                 }
+
+                 //Clears everything inside the heap, 0(n)
+                 public void clear(){
+                    for(int i = 0; i < heapCapacity; i++)
+                        heap.set(i, null);
+                    heapSize = 0;
+                    map.clear();    
+                 }
+
 
 
             }
