@@ -870,6 +870,15 @@
                         set.remove(index); // TreeSets take 0(log(n))
                         if(set.size() == 0) map.remove(value);
                     }
+
+                    // Extract an index position for the given value
+                    // Note: If a value exists multiple times in the
+                    // heap the highest index is returned (this has arbitrarily been chosen)
+                    private Integer mapGet(T value){
+                        TreeSet <Integer> set = map.get(value);
+                        if(set != null) return set.last();
+                        return null;
+                    }
                  }
 
 
