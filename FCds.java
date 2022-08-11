@@ -688,6 +688,31 @@
                     map.clear();    
                  }
 
+                 // Return the size of the heap
+                 public int size(){
+                    return heapSize;
+                 }
+
+
+                 // Reutrns the value of the element with the lowest 
+                 // priority in this priority queue. if the priority
+                 // queue is empty null is returned. 
+                 public T peek(){
+                    if(isEmpty()) return null;
+                    return heap.get(0);
+                 }
+
+                 // Removes the root of the heap, 0(log(n))
+                 public T poll(){
+                    return removeAt(0);
+                 }
+
+                 // Test if an element is in heap, 0(1)
+                 public boolean contains (T elem) {
+                    //map lookup to check containment, 0(1)
+                    if(elem == null) return false;
+                 }
+
 
 
             }
