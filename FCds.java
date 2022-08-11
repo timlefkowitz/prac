@@ -641,7 +641,40 @@
                 // us have 0(log(n)) removals and 0(1) element containment 
                  // check at the cost of some additional space and minor overhead
                  private Map<T, TreeSet<Integer>> map = new HashMap<>();
-                 
+
+                 //Construct and initially empty priority queue
+                 public PQueue(){
+                    this(1);
+                 }
+
+                 //Construct a priority queue with an initial capacity
+                 public PQueue(int sz){
+                    heap = new ArrayList<>(sz);
+                 }
+
+                 // Construct a priority queue using heapify
+                 // in 0(n) time
+                 public PQeue(T[] elems){
+                    heapSize = heapCapacity = elems.length;
+                    heap = new ArrayList<T>( heapCapacity);
+
+                    // place all element in heap 
+                    for(int i =0; i <heapSize; i++){
+                        mapAdd(elems[i], i);
+                        heap.add(elems[i]);
+                    }
+
+                    //heapify process, 0(n)
+                    for (int i = Math.max(0,(heapSize/2)-1); i>= 0; i--)
+                        sink(i);
+                 }
+
+                 //Priority queue construction, 0(nlog(n))
+                 public PQueue(Collection<T> elems){
+                    this(elems.size());
+                    for(T elem : elems) add(elem);
+                 }
+
 
 
             }
