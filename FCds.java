@@ -784,6 +784,26 @@
                         swap(smallest, k);
                         k = smallest;
                     }
+
+                    // Swap two nodes. Assumes i & j are valid, 0(1)
+                    private void swap(int i, int j){
+                        T i_elem = heap.get(i);
+                        T j_elem = heap.get(j);
+
+                        heap.set(i, j_elem);
+                        heap.set(j, i_elem);
+
+                        mapSwap(i_elem, j_elem, i, j);
+                    }
+
+                    // Removes a particular element in the heap, 0(log(n))
+                    public boolean remove(T element){
+                        if(element == null) return false;
+
+                        Integer index = mapGet(element);
+                        if(index != null) removeAt(index);
+                        return index != null;
+                    }
                  }
 
 
