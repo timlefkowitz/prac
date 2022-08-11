@@ -733,6 +733,16 @@
                     heapSize++;
                  }
 
+                 // Tests if the value of node i <= node j
+                 // This method assumes i& j are valid indices, 0(1)
+
+                 private boolean less(int i, int j){
+
+                    T node1 = heap.get(i);
+                    T node2 = heap.get(j);
+                    return node1.compareTo(node2) <= 0;
+                 }
+
 
 
             }
