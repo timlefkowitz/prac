@@ -832,6 +832,44 @@
 
                         return removed_data;
                     }
+
+                    // Recursively checks if this heap is a min heap
+                    // This method is just for testing purposes to make 
+                    // sure the heap invariant is still being maintained 
+                    // Called this method with k=0 to start at the root
+                    public boolean isMinHeap(int k){
+                        // If we are outside the bounds of the heap return true
+                        if(k < =heapSize) return true;
+                        int left = 2*k+1;
+                        int right = 2*k+2;
+
+                        if (left < heapSize && !less(k, left)) return false;
+                        if (right < heapSize && !less(k, right)) return false;
+
+                        return isMinHeap(left) && isMinHeap(right);
+
+                    }
+
+                    // add a node value and its index to the map 
+                    private void mapAdd(T value, int index){
+                        TreeSet<Integer> set = map.get(value);
+                        // new valuue being inserted in map
+                        if(set == null){
+                            set = new TreeSet<>();
+                            set.add(index);
+                            map.put(value, set);
+
+                        // Value already exists in map
+
+                        } else set.add(index);
+                    }
+
+                    // Removed the index at a given value, 0(log(n))
+                    private void mapRemove(T value, int index){
+                        TreeSet<Integer> set = map.get(value);
+                        set.remove(index); // TreeSets take 0(log(n))
+                        if(set.size() == 0) map.remove(value);
+                    }
                  }
 
 
