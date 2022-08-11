@@ -711,6 +711,26 @@
                  public boolean contains (T elem) {
                     //map lookup to check containment, 0(1)
                     if(elem == null) return false;
+                    return map.containsKey(elem);
+                 }
+
+
+                 // Adds an element to the priority queue, the
+                 // element must not be null, 0(log(n))
+                 public void add(T elem) {
+                    if(elem == null) throw new IllegalArumentException();
+
+                    if(heapSize < heapCapacity){
+                        heap.set(heapSize, elem);
+                    } else {
+                        heap.add(elem);
+                        heapCapacity++;
+                    }
+
+                    mapAdd(elem, heapSize);
+
+                    swim(heapSize);
+                    heapSize++;
                  }
 
 
