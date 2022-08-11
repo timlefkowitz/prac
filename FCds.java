@@ -743,6 +743,50 @@
                     return node1.compareTo(node2) <= 0;
                  }
 
+                 // Bottom up node swim, 0(log(n))
+                 private void swim(int k){
+                    //grab the index of the next parent node WRT to K
+                    int parent = (k-1) / 2;
+
+                    // Keep swimming while we have not reached the 
+                    // root and while we're less than our parent. 
+                    while (k > 0 && less(k, parent)){
+
+                        // Exchange k with the parent
+                        swap(parent, k);
+                        k = parent;
+
+                        // Grab the index of the next parent node WRT to K
+                        parent = (k-1) / 2;
+
+                    }
+                 }
+
+
+                 // Top down node sink, 0(log(n))
+                 private void sink(int k){
+                    while(true){
+                        int left = 2 * k + 1; // left node
+                        int right = 2*k+2; // right node 
+                        int smallest = left; // Assume left is the smallest node of the two children
+
+
+                        // Find which is smaller left or right
+                        // If right is smaller set smallest to be right
+                        if(right < heapSize && less(right,left))
+                        smallest = right;
+
+                        // stop if we're outside the bounds of the tree
+                        // or stop early if we cannot sink k anymore 
+                        if(left>= heapSize || less(k, smallest)) break;
+
+                        // Move down the tree following the smallest node 
+                        swap(smallest, k);
+                        k = smallest;
+                    }
+                 }
+
+
 
 
             }
