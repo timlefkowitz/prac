@@ -804,6 +804,34 @@
                         if(index != null) removeAt(index);
                         return index != null;
                     }
+
+
+                    // Removes a node at particular index, 0(log(n))
+                    private T removeAt(int i){
+                        if(isEmpty()) return null;
+
+                        heapSize--;
+                        T removed_data = heap.get(i);
+                        swap(i, heapSize);
+
+                        // Obliterate the value
+                        heap.set(heapSize, null);
+                        mapRemove(removed_data, heapSize);
+
+                        // Removed last element
+                        if(i == heapSize) return removed_data;
+
+                        T elem = heap.get(i);
+
+                        // Try sinking element
+                        sink(i);
+
+                        //if sinking did not work try swimming 
+                        if(heap.get(i).equals(elem))
+                        swim(i);
+
+                        return removed_data;
+                    }
                  }
 
 
