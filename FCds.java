@@ -621,9 +621,28 @@
                  Answer: no it doesn't matter which node 
                  we remove as long as we satisfy
                  the heap invariant in the end.
+            */       
+            
 
+            import java.util.*
+
+            class PQueue <T extends Comparable<T>> {
+                // The Number of elements currently inside the heap
+                private int heapSize = 0;
+
+                // The internal capacity of the heap
+                private int heapCapacity = 0;
+
+                // A Dynamic list to track the elements inside the heap
+                private List<T> heap = null;
+
+                // this map keeps track of the possible indices a particular
+                // node value is found in the heap. Having this mapping lets
+                // us have 0(log(n)) removals and 0(1) element containment 
+                 // check at the cost of some additional space and minor overhead
+                 private Map<T, TreeSet<Integer>> map = new HashMap<>();
                  
-         
-            */
 
-        
+
+            }
+
