@@ -886,6 +886,17 @@
 
                  // UNION FIND!
                 //  https://youtu.be/RBSGKlAvoiM?t=8911
+                
+                /*
+                                What is a Union Find
+                                Union Find is a data structure that keeps track
+                                of the elements which are split into one or more disjoint sets. 
+                                its has two primary operations:
+                                find and union 
+                                
+                                
+                */
+                
 
 
 
