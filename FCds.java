@@ -919,6 +919,15 @@
                         been processed or all the vertices have been unified. 
 
                  */
+
+                 /**
+                    Creating a Union Find 
+
+                    To begin using Union Find, first 
+                    construct a bijection(a mapping)
+                    between your objects and the integers
+                    in the range [0,n).
+                  */
                 
 
 
