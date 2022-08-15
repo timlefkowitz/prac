@@ -900,7 +900,24 @@
                 /**
                     Union Find
                     Kruskal's Algorithm
-                    
+
+                    Kruskal's Minimum Spanning Tree
+
+                    Given a graph G = (V,E) we want to find 
+                    a Minimum Spanning Tree in the graph(it may not be unique)
+                    A minimum spanning tree is a subset of the edges which connect 
+                    all vertices in the graph with the minimal total edge cost. 
+
+                    1. Sort edges by ascending edge weight. 
+                    2. Walk through the sorted edges and look at
+                        the two nodes the edge belongs, if the 
+                        nodes are already unified we don't include
+                        this edge, otherwise we include it and unify
+                        the nodes.
+
+                    3. The algorithm terminates when every edge has 
+                        been processed or all the vertices have been unified. 
+
                  */
                 
 
