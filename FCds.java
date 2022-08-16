@@ -933,5 +933,38 @@
                   /**
                   Path Compression 
                   Union Find */
+
+
+
+                  /**
+                    Union Find Source Code 
+                   */
+
+                   public class UnionFind {
+
+                    // The number of elements in this union find 
+                    private int size;
+
+                    // Used to track the sizes of each components 
+                    private int[] sz;
+
+                    // id[i] points to the parent of i, if idp[i]= i  then i is a root node
+                    private int id;
+
+                    // Tracks the number of components in the union find 
+                    private int numComponents;
+
+                    public UnionFind(int size){
+                        if(size <= 0)
+                            throw new IllegalArgumentException("Size <=0 is not allowed");
+
+                        this.size = numComponents = size;
+                        sz = new int[size];
+                        id = new int[size];    
+
+                    }
+
+
+                   }
             }
 
