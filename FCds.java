@@ -1008,5 +1008,24 @@
                    public int components(){
                     return numComponents;
                    }
+
+                   // Unify the components/sets containing elements 'p' and 'q'
+                   public void unify(int p, int q){
+                    int root1 = find(p);
+                    int root2 = find(q);
+
+                    // These elements are already in the same group!
+                    if(root1 == root2) return;
+
+                    // Merge two components/sets together.
+                    // Merge smaller component/set into the larger one. 
+                    if(sz[root1] < sz[root2]){
+                        sz[root2] += sz[root1];
+                        id[root1] = root2;        
+                     } else {
+                        sz[root1] += sz[root2];
+                        id[root2] = root;
+                     }
+                   }
             }
 
