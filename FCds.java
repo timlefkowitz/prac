@@ -961,10 +961,37 @@
                         this.size = numComponents = size;
                         sz = new int[size];
                         id = new int[size];    
-
                     }
 
+                    for(int i =0; i< size; i++){
+                        id[i] = i; // Link to itself (self root)
+                        sz[i] = 1;  // Each component is originially of size one 
+                    }
+                   }
 
+                   //Find which component/ set 'p' belongs to, takes amortized constant time. 
+                   public int find(int p) {
+                    // Find the root of the component/set 
+                    int root = p;
+                    while(root != id[root])
+                        root = id[root];
+
+                    // Compress the path leading back to the root. 
+                    // Doing this operation is called "Path Compression"
+                    // and is what gives us amortized constant time complexity. 
+                    while(p != root){
+                        int next = id[p];
+                        id[p] = root;
+                        p= next;
+                    }    
+                    return root;
+                   }
+
+                   // Return weather or not the elemtns 'p' and 
+                   // 'q' are in the same components/set.
+
+                   public boolean connected(int p, int q){
+                    return find(p) == find(q);
                    }
             }
 
