@@ -1026,6 +1026,10 @@
                         sz[root1] += sz[root2];
                         id[root2] = root;
                      }
+
+                    // Since the roots found are different we know that 
+                    // number of components/sets/ has decreaded by one
+                     numComponents--;
                    }
             }
 
