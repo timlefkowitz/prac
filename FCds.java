@@ -993,5 +993,20 @@
                    public boolean connected(int p, int q){
                     return find(p) == find(q);
                    }
+
+                   // Return the size of the components/set 'p' belongs to 
+                   public int componentSize(int p) {
+                        return sz[find(p)];
+                   }
+
+                   // Return the number of elements in this UnionFind/Disjoint set
+                   public int size(){
+                    return size;
+                   }
+
+                   //Returns the number of remaining components/sets
+                   public int components(){
+                    return numComponents;
+                   }
             }
 
