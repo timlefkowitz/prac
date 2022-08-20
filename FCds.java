@@ -1035,5 +1035,7 @@
 
             /**
                 Binary Search Tree
+                
+                A binary search tree is a binary tree that satisfies the bst invariant
              */
 
