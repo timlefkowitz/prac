@@ -1037,5 +1037,6 @@
                 Binary Search Tree
                 
                 A binary search tree is a binary tree that satisfies the bst invariant
+                Left subtree has smalle elements and right subtree has larger elements 
              */
 
