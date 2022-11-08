@@ -3,6 +3,16 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
+        
+        // Hash Function
+        
+//         function H(person):
+//             hash := person.age
+//             hash = hash + length(person.name)
+//             if person.sex == "M":
+//                 hash = hash + 1
+//             return hash mod 6        
+                
 
         // Even or Odd
 
