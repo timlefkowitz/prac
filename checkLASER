@@ -1,0 +1,40 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class checkLASER {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader("inputs/inputCheck.txt"));
+        String line;
+        ArrayList<Integer> queue = new ArrayList<Integer>();
+        while ((line = br.readLine()) != null) {
+            String[] ourYXZ=line.split("");
+            ArrayList<String> strList = new ArrayList<String>(
+                    Arrays.asList(ourYXZ));
+            int llk2 = 0;
+            int llk3 = 0;
+            int llk4 = 0;
+            int llk5 = 0;
+            int xz =0;
+            double fdz=0.00;
+            for(int sa=0;sa<ourYXZ.length -1;sa=sa+4){
+//                System.out.println(strList.get(sa) + " is this odd? or even ");
+                int parsed = Integer.parseInt(strList.get(sa));
+                llk2 = parsed+llk2;
+            }
+            llk3 = llk2*3;
+            for(int sz=1;sz<ourYXZ.length-1;sz=sz+2){
+                int parsed = Integer.parseInt(strList.get(sz));
+                llk4 = parsed+llk4;
+            }
+            llk5= llk3+llk4;
+            String sudoString=llk5+"";
+            fdz= Double.parseDouble(sudoString.substring(1));
+//            System.out.println(afs+" Look here ");
+            int finalAf = (int) Math.round(fdz/10.0) * 10;
+            }
+        }
+    }
+
