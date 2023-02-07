@@ -16,4 +16,10 @@ public static boolean searchforSQLInjection(String strSearchTarget){
             return true;
 
     }
+    catch (exception e)
+    {
+        System.out.println("Error while searching string: " + e.toString());
+        return false;
+    }
+    return false;
 }
