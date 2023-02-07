@@ -23,3 +23,9 @@ public static boolean searchforSQLInjection(String strSearchTarget){
     }
     return false;
 }
+
+public static void testfunction()
+{
+    String strTest = " this is a test <script> ";
+    booleanbTest = searchforSQLInjection(strTest);
+}
