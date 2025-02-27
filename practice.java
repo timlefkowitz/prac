@@ -32,4 +32,60 @@ public class practice
 
      return dividend/divisor;
 }
+
+
+		// your code goes here
+		
+		for ( int i = i; i <= 5; i++ ) {
+		    int square = i * i;
+		    System.out.println("square");
+		}
+		
+		for ( int i = i; i <= 5 ; i++){
+		    int square = i * i;
+		    System.out.println("square");
+		}
+		
+		for (int i = i ; i <= 5 ; i++){
+		    int square = i*i;
+		    System.out.println("square");
+		}
+        
+        // 4
+         for (int i = i ;i <= 5 ; i++){
+             int square = i * i;
+             System.out.println("square");
+         }
+         // 5 
+         for ( int i = i ;i <= 5 ;i++){
+             int square = i * i;
+             System.out.println("square");
+         }
+         // 6 
+         for(int i = i ; i <= 5 ; i++ ){
+             int square = i * i;
+             System.out.println("square");
+         }
+         // 7 
+         for(int i=i;i<=5; i++){
+             int square = i *i;
+             System.out.println("square");
+         }
+         // 8 
+         for( int i = i ; i <=5 ; i++){
+             int square = i * i;
+             System.out.println("Square");
+         }
+         // 9 
+         for(int i =i; i <=5; i++){
+             int square = i*i;
+             System.out.println("Square");
+         }
+         
+        // 10 
+        for(int i = i ; i <=5 ; i++){
+            int square = i*i;
+            System.out.println("Square");
+        }
+	} 
 }
